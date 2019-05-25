@@ -23,7 +23,7 @@ RUN set -x && \
 	bash -c  'echo "deb https://debian.snips.ai/stretch stable main" > /etc/apt/sources.list.d/snips.list'
 
 RUN set -x && \
-	apt-key adv --keyserver pgp.mit.edu --recv-keys F727C778CCB0A455 
+	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D4F50CDCA10A2849 
 	
 RUN set -x && \
 	apt-get update 
