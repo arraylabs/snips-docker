@@ -16,9 +16,9 @@ cd /var/lib/snips/skills
 rm -rf *
 
 #download required skills from git
-for url in $(awk '$1=="url:" {print $2}' /usr/share/snips/assistant/Snipsfile.yaml); do
-	git clone $url
-done
+# for url in $(awk '$1=="url:" {print $2}' /usr/share/snips/assistant/Snipsfile.yaml); do
+# 	git clone $url
+# done
 
 #be shure we are still in the skill directory
 cd /var/lib/snips/skills
